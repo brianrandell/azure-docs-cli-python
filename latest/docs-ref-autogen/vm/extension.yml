@@ -40,7 +40,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vm_extension_list
@@ -68,7 +68,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vm_extension_set
@@ -113,7 +113,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vm_extension_show
@@ -145,7 +145,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 commands:
@@ -189,9 +189,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-original_content_git_url: https://github.com/viagrif/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+original_content_git_url: https://github.com/viagrif/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 gitcommit: https://github.com/viagrif/azure-cli/blob/9e8700c22a7d5ce986018258faa8f32f81dd99d5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 updated_at: 2/13/2018 4:06:23 PM
 ms.date: 2/13/2018

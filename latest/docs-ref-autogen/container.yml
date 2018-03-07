@@ -34,7 +34,7 @@ items:
   source:
     path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_container_create
@@ -155,7 +155,7 @@ items:
   source:
     path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_container_delete
@@ -179,7 +179,7 @@ items:
   source:
     path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_container_list
@@ -195,7 +195,7 @@ items:
   source:
     path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_container_logs
@@ -222,7 +222,7 @@ items:
   source:
     path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_container_show
@@ -243,7 +243,7 @@ items:
   source:
     path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 commands:
@@ -278,9 +278,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-original_content_git_url: https://github.com/viagrif/azure-cli/blob/dev/src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
+original_content_git_url: https://github.com/viagrif/azure-cli/blob/master/src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
 gitcommit: https://github.com/viagrif/azure-cli/blob/ff8e9d2a3dfdfb28c18dd267210a66678dfd654c/src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
 updated_at: 2/6/2018 11:13:08 PM
 ms.date: 2/6/2018
