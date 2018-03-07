@@ -32,7 +32,7 @@ items:
   - isRequired: true
     name: --actions
     parameterValueGroup: delete, push
-    summary: Space-separated list of actions that trigger the webhook to post notifications.
+    summary: Space separated list of actions that trigger the webhook to post notifications.
     description: ''
   - isRequired: true
     name: --name -n
@@ -47,7 +47,7 @@ items:
     summary: The service URI for the webhook to post notifications.
     description: ''
   - name: --headers
-    summary: Space-separated custom headers in 'key[=value]' format that will be added to the webhook notifications. Use "" to clear existing headers.
+    summary: Space separated custom headers in 'key[=value]' format that will be added to the webhook notifications. Use "" to clear existing headers.
     description: ''
   - name: --location -l
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
@@ -64,14 +64,14 @@ items:
     summary: Indicates whether the webhook is enabled.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   source:
     path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_webhook_delete
   name: az acr webhook delete
   summary: Delete a webhook from a container registry.
@@ -99,7 +99,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_webhook_get_config
   name: az acr webhook get-config
   summary: Get the service URI and custom headers for the webhook.
@@ -127,7 +127,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_webhook_list
   name: az acr webhook list
   summary: List all of the webhooks for a container registry.
@@ -151,7 +151,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_webhook_list_events
   name: az acr webhook list-events
   summary: List recent events for a webhook.
@@ -179,7 +179,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_webhook_ping
   name: az acr webhook ping
   summary: Trigger a ping event for a webhook.
@@ -207,7 +207,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_webhook_show
   name: az acr webhook show
   summary: Get the details of a webhook.
@@ -235,7 +235,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_webhook_update
   name: az acr webhook update
   summary: Update a webhook.
@@ -263,10 +263,10 @@ items:
     description: ''
   - name: --actions
     parameterValueGroup: delete, push
-    summary: Space-separated list of actions that trigger the webhook to post notifications.
+    summary: Space separated list of actions that trigger the webhook to post notifications.
     description: ''
   - name: --headers
-    summary: Space-separated custom headers in 'key[=value]' format that will be added to the webhook notifications. Use "" to clear existing headers.
+    summary: Space separated custom headers in 'key[=value]' format that will be added to the webhook notifications. Use "" to clear existing headers.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -279,7 +279,7 @@ items:
     summary: Indicates whether the webhook is enabled.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --uri
     summary: The service URI for the webhook to post notifications.
@@ -298,7 +298,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 commands:
 - uid: az_acr_webhook_create
   name: az acr webhook create
@@ -337,9 +337,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/78163f6b27acaf77dc10030271cd0c10fcfa57e5/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+gitcommit: https://github.com/brianrandell/azure-cli/blob/78163f6b27acaf77dc10030271cd0c10fcfa57e5/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 updated_at: 1/24/2018 11:42:27 PM
 ms.date: 1/24/2018

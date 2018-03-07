@@ -35,7 +35,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_create
   name: az acr create
   summary: Creates a container registry.
@@ -79,7 +79,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_delete
   name: az acr delete
   summary: Deletes a container registry.
@@ -103,7 +103,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_list
   name: az acr list
   summary: Lists all the container registries under the current subscription.
@@ -126,7 +126,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_login
   name: az acr login
   summary: Log in to a container registry through Docker.
@@ -156,7 +156,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_show
   name: az acr show
   summary: Get the details of a container registry.
@@ -180,7 +180,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_show_usage
   name: az acr show-usage
   summary: Get the quota usages for a container registry.
@@ -204,7 +204,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_acr_update
   name: az acr update
   summary: Update a container registry.
@@ -241,7 +241,7 @@ items:
     summary: Provide the name of an existing storage account if you're recreating a container registry over a previous registry created storage account. Only applicable to Classic SKU.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
@@ -257,7 +257,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 commands:
 - uid: az_acr_check_name
   name: az acr check-name
@@ -365,9 +365,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/78163f6b27acaf77dc10030271cd0c10fcfa57e5/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+gitcommit: https://github.com/brianrandell/azure-cli/blob/78163f6b27acaf77dc10030271cd0c10fcfa57e5/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 updated_at: 1/24/2018 11:42:27 PM
 ms.date: 1/24/2018

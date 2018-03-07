@@ -26,9 +26,9 @@ items:
   - summary: Create an IoT Hub with the free pricing tier F1, in the region of the resource group.
     syntax:
       content: az iot hub create --resource-group MyResourceGroup --name MyIotHub
-  - summary: Create an IoT Hub with the standard pricing tier S1 and 4 partitions, in the 'westus' region.
+  - summary: Create an IoT Hub with the standard pricing tier S1, in the 'westus' region.
     syntax:
-      content: az iot hub create --resource-group MyResourceGroup --name MyIotHub --sku S1 --location westus --partition-count 4
+      content: az iot hub create --resource-group MyResourceGroup --name MyIotHub --sku S1 --location westus
   parameters:
   - isRequired: true
     name: --name -n
@@ -40,10 +40,6 @@ items:
     description: ''
   - name: --location -l
     summary: Location of your IoT Hub. Default is the location of target resource group.
-    description: ''
-  - name: --partition-count
-    defaultValue: "2"
-    summary: The number of partitions for device-to-cloud messages.
     description: ''
   - name: --sku
     defaultValue: F1
@@ -59,7 +55,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_iot_hub_delete
   name: az iot hub delete
   summary: Delete an IoT hub.
@@ -79,7 +75,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_iot_hub_list
   name: az iot hub list
   summary: List IoT hubs.
@@ -102,7 +98,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_iot_hub_list_skus
   name: az iot hub list-skus
   summary: List available pricing tiers.
@@ -122,7 +118,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_iot_hub_show
   name: az iot hub show
   summary: Get the details of an IoT hub.
@@ -142,7 +138,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_iot_hub_show_connection_string
   name: az iot hub show-connection-string
   summary: Show the connection strings for an IoT hub.
@@ -183,7 +179,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_iot_hub_show_quota_metrics
   name: az iot hub show-quota-metrics
   summary: Get the quota metrics for an IoT hub.
@@ -203,7 +199,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_iot_hub_show_stats
   name: az iot hub show-stats
   summary: Get the statistics for an IoT hub.
@@ -223,7 +219,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_iot_hub_update
   name: az iot hub update
   summary: Update metadata for an IoT hub.
@@ -256,7 +252,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 commands:
 - uid: az_iot_hub_certificate
   name: az iot hub certificate
@@ -364,9 +360,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/0c85e56114c43bcef30f0114c597324ab46e69b2/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-updated_at: 2/6/2018 8:49:04 PM
-ms.date: 2/6/2018
+original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+gitcommit: https://github.com/brianrandell/azure-cli/blob/84016fb6ab02c39d026877f4b2867416bd926831/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+updated_at: 1/5/2018 6:34:32 PM
+ms.date: 1/5/2018

@@ -9,8 +9,6 @@ items:
   children:
   - az_cdn_custom_domain_create
   - az_cdn_custom_domain_delete
-  - az_cdn_custom_domain_disable_https
-  - az_cdn_custom_domain_enable_https
   - az_cdn_custom_domain_list
   - az_cdn_custom_domain_show
 - uid: az_cdn_custom_domain_create
@@ -34,7 +32,7 @@ items:
     description: ''
   - isRequired: true
     name: --name -n
-    summary: Name of the custom domain.
+    summary: ''
     description: ''
   - isRequired: true
     name: --profile-name
@@ -48,14 +46,14 @@ items:
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   source:
     path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
     remote:
       branch: master
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_cdn_custom_domain_delete
   name: az cdn custom-domain delete
   summary: Delete the custom domain of a CDN.
@@ -88,65 +86,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_cdn_custom_domain_disable_https
-  name: az cdn custom-domain disable-https
-  summary: Disable https delivery of the custom domain.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --endpoint-name
-    summary: Name of the endpoint under the profile which is unique globally.
-    description: ''
-  - isRequired: true
-    name: --name -n
-    summary: Name of the custom domain.
-    description: ''
-  - isRequired: true
-    name: --profile-name
-    summary: Name of the CDN profile which is unique within the resource group.
-    description: ''
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  source:
-    path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-    remote:
-      branch: master
-      path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_cdn_custom_domain_enable_https
-  name: az cdn custom-domain enable-https
-  summary: Enable https delivery of the custom domain.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --endpoint-name
-    summary: Name of the endpoint under the profile which is unique globally.
-    description: ''
-  - isRequired: true
-    name: --name -n
-    summary: Name of the custom domain.
-    description: ''
-  - isRequired: true
-    name: --profile-name
-    summary: Name of the CDN profile which is unique within the resource group.
-    description: ''
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  source:
-    path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-    remote:
-      branch: master
-      path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_cdn_custom_domain_list
   name: az cdn custom-domain list
   summary: Lists all of the existing custom domains within an endpoint.
@@ -171,7 +111,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_cdn_custom_domain_show
   name: az cdn custom-domain show
   summary: Show details for the custom domain of a CDN.
@@ -204,7 +144,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 commands:
 - uid: az_cdn_custom_domain_create
   name: az cdn custom-domain create
@@ -212,12 +152,6 @@ commands:
 - uid: az_cdn_custom_domain_delete
   name: az cdn custom-domain delete
   summary: Delete the custom domain of a CDN.
-- uid: az_cdn_custom_domain_disable_https
-  name: az cdn custom-domain disable-https
-  summary: Disable https delivery of the custom domain.
-- uid: az_cdn_custom_domain_enable_https
-  name: az cdn custom-domain enable-https
-  summary: Enable https delivery of the custom domain.
 - uid: az_cdn_custom_domain_list
   name: az cdn custom-domain list
   summary: Lists all of the existing custom domains within an endpoint.
@@ -237,9 +171,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
+original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
+gitcommit: https://github.com/brianrandell/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
 updated_at: 11/13/2017 7:42:14 PM
 ms.date: 11/13/2017

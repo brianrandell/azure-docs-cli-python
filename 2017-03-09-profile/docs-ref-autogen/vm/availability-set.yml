@@ -46,7 +46,7 @@ items:
     summary: Update Domain count. If unspecified, server picks the most optimal number like 5. For the latest defaults see <a href="https://docs.microsoft.com/en-us/rest/api/compute/availabilitysets/availabilitysets-create">https://docs.microsoft.com/en-us/rest/api/compute/availabilitysets/availabilitysets-create</a>.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --validate
     summary: Generate and validate the ARM template without creating any resources.
@@ -56,7 +56,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_vm_availability_set_delete
   name: az vm availability-set delete
   summary: Delete an availability set.
@@ -81,7 +81,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_vm_availability_set_list
   name: az vm availability-set list
   summary: List availability sets.
@@ -102,7 +102,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_vm_availability_set_list_sizes
   name: az vm availability-set list-sizes
   summary: List VM sizes for an availability set.
@@ -127,7 +127,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_vm_availability_set_show
   name: az vm availability-set show
   summary: Get information for an availability set.
@@ -152,7 +152,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 - uid: az_vm_availability_set_update
   name: az vm availability-set update
   summary: Update an Azure Availability Set.
@@ -196,7 +196,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/brianrandell/azure-cli.git
 commands:
 - uid: az_vm_availability_set_create
   name: az vm availability-set create
@@ -229,9 +229,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b9be8134f95515cf6a1a494d5d4a3d8222581cfb/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 2/7/2018 9:20:08 PM
-ms.date: 2/7/2018
+original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+gitcommit: https://github.com/brianrandell/azure-cli/blob/6feb7f593a887e4cc3c5191f2374c87e13b19b93/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 1/24/2018 7:57:26 PM
+ms.date: 1/24/2018
