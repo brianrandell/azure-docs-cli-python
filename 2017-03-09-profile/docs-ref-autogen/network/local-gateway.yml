@@ -42,7 +42,7 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --asn
     summary: Autonomous System Number to use for the BGP settings.
@@ -58,7 +58,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_local_gateway_delete
   name: az network local-gateway delete
   summary: Delete a local VPN gateway.
@@ -82,7 +82,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_local_gateway_list
   name: az network local-gateway list
   summary: List local VPN gateways.
@@ -99,7 +99,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_local_gateway_show
   name: az network local-gateway show
   summary: Get the details for a local VPN gateway.
@@ -120,7 +120,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_local_gateway_update
   name: az network local-gateway update
   summary: Update a local VPN gateway.
@@ -146,7 +146,7 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --asn
     summary: Autonomous System Number to use for the BGP settings.
@@ -171,7 +171,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_local_gateway_wait
   name: az network local-gateway wait
   summary: ''
@@ -215,7 +215,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 commands:
 - uid: az_network_local_gateway_create
   name: az network local-gateway create
@@ -248,9 +248,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/brianrandell/azure-cli/blob/00f4c903221240501ae124a99a421b3069116335/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 1/25/2018 12:43:57 AM
-ms.date: 1/25/2018
+original_content_git_url: https://github.com/viagrif/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+gitcommit: https://github.com/viagrif/azure-cli/blob/44879f3e15d94fd3ed52aa26d9e209867d5c8016/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 2/5/2018 11:51:42 PM
+ms.date: 2/5/2018

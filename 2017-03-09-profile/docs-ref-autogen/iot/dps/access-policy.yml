@@ -38,7 +38,10 @@ items:
   - isRequired: true
     name: --rights -r
     parameterValueGroup: DeviceConnect, EnrollmentRead, EnrollmentWrite, RegistrationStatusRead, RegistrationStatusWrite, ServiceConfig
-    summary: Access rights for the IoT provisioning service. Use space separated list for multiple rights.
+    summary: Access rights for the IoT provisioning service. Use space-separated list for multiple rights.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --primary-key
     summary: Primary SAS key value.
@@ -51,7 +54,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_iot_dps_access_policy_delete
   name: az iot dps access-policy delete
   summary: Delete a shared access policies in an Azure IoT Hub device provisioning service.
@@ -75,12 +78,15 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
   source:
     path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_iot_dps_access_policy_list
   name: az iot dps access-policy list
   summary: List all shared access policies in an Azure IoT Hub device provisioning service.
@@ -105,7 +111,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_iot_dps_access_policy_show
   name: az iot dps access-policy show
   summary: Show details of a shared access policies in an Azure IoT Hub device provisioning service.
@@ -134,7 +140,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_iot_dps_access_policy_update
   name: az iot dps access-policy update
   summary: Update a shared access policy in an Azure IoT Hub device provisioning service.
@@ -158,12 +164,15 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
   - name: --primary-key
     summary: Primary SAS key value.
     description: ''
   - name: --rights -r
     parameterValueGroup: DeviceConnect, EnrollmentRead, EnrollmentWrite, RegistrationStatusRead, RegistrationStatusWrite, ServiceConfig
-    summary: Access rights for the IoT provisioning service. Use space separated list for multiple rights.
+    summary: Access rights for the IoT provisioning service. Use space-separated list for multiple rights.
     description: ''
   - name: --secondary-key
     summary: Secondary SAS key value.
@@ -173,7 +182,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 commands:
 - uid: az_iot_dps_access_policy_create
   name: az iot dps access-policy create
@@ -203,9 +212,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-gitcommit: https://github.com/brianrandell/azure-cli/blob/84016fb6ab02c39d026877f4b2867416bd926831/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-updated_at: 1/5/2018 6:34:32 PM
-ms.date: 1/5/2018
+original_content_git_url: https://github.com/viagrif/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+gitcommit: https://github.com/viagrif/azure-cli/blob/0c85e56114c43bcef30f0114c597324ab46e69b2/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+updated_at: 2/6/2018 8:49:04 PM
+ms.date: 2/6/2018

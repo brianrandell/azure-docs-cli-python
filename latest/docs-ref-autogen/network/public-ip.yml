@@ -49,7 +49,7 @@ items:
     summary: Idle timeout in minutes.
     description: ''
   - name: --ip-tags
-    summary: Space separated list of IP tags in 'TYPE=VAL' format.
+    summary: Space-separated list of IP tags in 'TYPE=VAL' format.
     description: ''
   - name: --location -l
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
@@ -63,7 +63,7 @@ items:
     summary: Public IP SKU.
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --version
     defaultValue: IPv4
@@ -79,7 +79,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_public_ip_delete
   name: az network public-ip delete
   summary: Delete a public IP address.
@@ -100,7 +100,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_public_ip_list
   name: az network public-ip list
   summary: List public IP addresses.
@@ -123,7 +123,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_public_ip_show
   name: az network public-ip show
   summary: Get the details of a public IP address.
@@ -154,7 +154,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_network_public_ip_update
   name: az network public-ip update
   summary: Update a public IP address.
@@ -185,7 +185,7 @@ items:
     summary: Idle timeout in minutes.
     description: ''
   - name: --ip-tags
-    summary: Space separated list of IP tags in 'TYPE=VAL' format.
+    summary: Space-separated list of IP tags in 'TYPE=VAL' format.
     description: ''
   - name: --reverse-fqdn
     summary: Reverse FQDN (fully qualified domain name).
@@ -196,7 +196,7 @@ items:
     summary: Public IP SKU.
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --version
     defaultValue: IPv4
@@ -217,7 +217,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 commands:
 - uid: az_network_public_ip_create
   name: az network public-ip create
@@ -247,9 +247,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/brianrandell/azure-cli/blob/00f4c903221240501ae124a99a421b3069116335/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 1/25/2018 12:43:57 AM
-ms.date: 1/25/2018
+original_content_git_url: https://github.com/viagrif/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+gitcommit: https://github.com/viagrif/azure-cli/blob/44879f3e15d94fd3ed52aa26d9e209867d5c8016/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 2/5/2018 11:51:42 PM
+ms.date: 2/5/2018

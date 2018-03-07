@@ -29,13 +29,13 @@ items:
     summary: A locality hint that can be used by the Batch service to select a compute node on which to start the new task.
     description: ''
   - name: --application-package-references
-    summary: The space separated list of IDs specifying the application packages to be installed. Space separated application IDs with optional version in 'id[#version]' format.
+    summary: The space-separated list of IDs specifying the application packages to be installed. Space-separated application IDs with optional version in 'id[#version]' format.
     description: ''
   - name: --command-line
     summary: The command line of the task. The command line does not run under a shell, and therefore cannot take advantage of shell features such as environment variable expansion. If you want to take advantage of such features, you should invoke the shell in the command line, for example using "cmd /c MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux.
     description: ''
   - name: --environment-settings
-    summary: A list of environment variable settings for the task. Space separated values in 'key=value' format.
+    summary: A list of environment variable settings for the task. Space-separated values in 'key=value' format.
     description: ''
   - name: --json-file
     summary: The file containing the task(s) to create in JSON format, if this parameter is specified, all other parameters are ignored.
@@ -47,7 +47,7 @@ items:
     summary: The maximum elapsed time that the task may run, measured from the time the task starts. If the task does not complete within the time limit, the Batch service terminates it. If this is not specified, there is no time limit on how long the task may run.
     description: ''
   - name: --resource-files
-    summary: A list of files that the Batch service will download to the compute node before running the command line. Space separated resource references in filename=blobsource format.
+    summary: A list of files that the Batch service will download to the compute node before running the command line. Space-separated resource references in filename=blobsource format.
     description: ''
   - name: --retention-time
     summary: The minimum time to retain the task directory on the compute node where it ran, from the time it completes execution. After this time, the Batch service may delete the task directory and all its contents. The default is infinite, i.e. the task directory will be retained until the compute node is removed or reimaged.
@@ -69,7 +69,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_batch_task_delete
   name: az batch task delete
   summary: Deletes a task from the specified job.
@@ -114,7 +114,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_batch_task_list
   name: az batch task list
   summary: Lists all of the tasks that are associated with the specified job.
@@ -149,7 +149,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_batch_task_reactivate
   name: az batch task reactivate
   summary: Reactivates a task, allowing it to run again even if its retry count has been exhausted.
@@ -191,7 +191,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_batch_task_reset
   name: az batch task reset
   summary: Reset the properties of a Batch task.
@@ -245,7 +245,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_batch_task_show
   name: az batch task show
   summary: Gets information about the specified task.
@@ -293,7 +293,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 - uid: az_batch_task_stop
   name: az batch task stop
   summary: Terminates the specified task.
@@ -335,7 +335,7 @@ items:
     remote:
       branch: master
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-      repo: https://github.com/brianrandell/azure-cli.git
+      repo: https://github.com/viagrif/azure-cli.git
 commands:
 - uid: az_batch_task_create
   name: az batch task create
@@ -392,9 +392,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/brianrandell/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-original_content_git_url: https://github.com/brianrandell/azure-cli/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-gitcommit: https://github.com/brianrandell/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+original_content_git_url: https://github.com/viagrif/azure-cli/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+gitcommit: https://github.com/viagrif/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
 updated_at: 11/13/2017 7:42:14 PM
 ms.date: 11/13/2017
