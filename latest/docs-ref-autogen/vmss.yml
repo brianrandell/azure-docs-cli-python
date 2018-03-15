@@ -30,14 +30,10 @@ items:
   - az_vmss_wait
 - uid: az_vmss_assign_identity
   name: az vmss assign-identity
-  summary: Enable managed service identity on a VMSS.
-  description: This is required to authenticate and interact with other Azure services using bearer tokens.
+  summary: (Deprecated, please use 'az vmss identity assign').
+  description: ''
   langs:
   - azurecli
-  examples:
-  - summary: Enable identity on a VMSS with the 'Owner' role.
-    syntax:
-      content: az vmss assign-identity -g MyResourceGroup -n MyVmss --role Owner
   parameters:
   - isRequired: true
     name: --name -n
@@ -63,7 +59,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_create
@@ -140,7 +136,6 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --priority
-    defaultValue: Regular
     parameterValueGroup: Low, Regular
     summary: (PREVIEW)Priority. Use 'Low' to run short-lived workloads in a cost-effective way.
     description: ''
@@ -281,16 +276,14 @@ items:
     summary: SKU when creating a new Load Balancer. Default to 'Basic' for any non-zonal scaleset and 'Standard' otherwise.
     description: ''
   - name: --data-disk-caching
-    parameterValueGroup: None, ReadOnly, ReadWrite
-    summary: Storage caching type for the VM data disk(s).
+    summary: Storage caching type for data disk(s), including 'None', 'ReadOnly', 'ReadWrite', etc. Use a singular value to apply on all disks, or use '<lun>=<vaule1> <lun>=<value2>' to configure individual disk.
     description: ''
   - name: --data-disk-sizes-gb
     summary: Space-separated empty managed data disk sizes in GB to create.
     description: ''
   - name: --os-disk-caching --storage-caching
-    defaultValue: ReadWrite
-    parameterValueGroup: ReadOnly, ReadWrite
-    summary: Storage caching type for the VM OS disk.
+    parameterValueGroup: None, ReadOnly, ReadWrite
+    summary: 'Storage caching type for the VM OS disk. Default: ReadWrite.'
     description: ''
   - name: --os-disk-name
     summary: The name of the new VM OS disk.
@@ -313,7 +306,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_deallocate
@@ -340,7 +333,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_delete
@@ -364,7 +357,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_delete_instances
@@ -392,7 +385,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_get_instance_view
@@ -416,7 +409,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_list
@@ -432,7 +425,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_list_instance_connection_info
@@ -453,7 +446,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_list_instance_public_ips
@@ -474,7 +467,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_list_instances
@@ -504,7 +497,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_list_skus
@@ -525,7 +518,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_reimage
@@ -552,19 +545,15 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_remove_identity
   name: az vmss remove-identity
-  summary: (PREVIEW) Remove user assigned identities from a VM scaleset.
+  summary: (Deprecated, please use 'az vmss identity remove').
   description: ''
   langs:
   - azurecli
-  examples:
-  - summary: Remove 2 identities which are in the same resource group with the VM scaleset
-    syntax:
-      content: az vmss remove-identity -g MyResourceGroup -n MyVm --identities readerId writerId
   parameters:
   - isRequired: true
     name: --identities
@@ -581,7 +570,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_restart
@@ -608,7 +597,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_scale
@@ -636,7 +625,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_show
@@ -660,7 +649,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_start
@@ -687,7 +676,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_stop
@@ -714,7 +703,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_update
@@ -747,7 +736,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_update_instances
@@ -775,7 +764,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_vmss_wait
@@ -819,13 +808,13 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 commands:
 - uid: az_vmss_assign_identity
   name: az vmss assign-identity
-  summary: Enable managed service identity on a VMSS.
+  summary: (Deprecated, please use 'az vmss identity assign').
 - uid: az_vmss_create
   name: az vmss create
   summary: Create an Azure Virtual Machine Scale Set.
@@ -901,6 +890,18 @@ commands:
 - uid: az_vmss_get_instance_view
   name: az vmss get-instance-view
   summary: View an instance of a VMSS.
+- uid: az_vmss_identity
+  name: az vmss identity
+  summary: Manage service identities of a VM scaleset.
+- uid: az_vmss_identity_assign
+  name: az vmss identity assign
+  summary: Enable managed service identity on a VMSS.
+- uid: az_vmss_identity_remove
+  name: az vmss identity remove
+  summary: (PREVIEW) Remove user assigned identities from a VM scaleset.
+- uid: az_vmss_identity_show
+  name: az vmss identity show
+  summary: Display VM scaleset's managed identity info.
 - uid: az_vmss_list
   name: az vmss list
   summary: List VMSS.
@@ -933,7 +934,7 @@ commands:
   summary: Reimage VMs within a VMSS.
 - uid: az_vmss_remove_identity
   name: az vmss remove-identity
-  summary: (PREVIEW) Remove user assigned identities from a VM scaleset.
+  summary: (Deprecated, please use 'az vmss identity remove').
 - uid: az_vmss_restart
   name: az vmss restart
   summary: Restart VMs within a VMSS.
@@ -983,9 +984,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/dev-makepatch/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-original_content_git_url: https://github.com/viagrif/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/viagrif/azure-cli/blob/9e8700c22a7d5ce986018258faa8f32f81dd99d5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 2/13/2018 4:06:23 PM
-ms.date: 2/13/2018
+original_content_git_url: https://github.com/viagrif/azure-cli/blob/dev-makepatch/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+gitcommit: https://github.com/viagrif/azure-cli/blob/e8f93ba0e7337ea3afebe25a827f2be04828695d/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 3/12/2018 7:13:12 PM
+ms.date: 3/12/2018

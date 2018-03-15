@@ -53,7 +53,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_delete_batch
@@ -91,7 +91,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_download
@@ -158,7 +158,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_download_batch
@@ -204,7 +204,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_exists
@@ -240,7 +240,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_generate_sas
@@ -306,7 +306,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_list
@@ -347,7 +347,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_resize
@@ -387,7 +387,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_show
@@ -423,7 +423,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_update
@@ -477,7 +477,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_upload
@@ -556,7 +556,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_upload_batch
@@ -575,7 +575,7 @@ items:
     summary: The directory to upload files from.
     description: ''
   - name: --destination-path
-    summary: ''
+    summary: The directory where the source data is copied to. If omitted, data is copied to the root directory.
     description: ''
   - name: --dryrun
     summary: List the files and blobs to be uploaded. No actual data transfer will occur.
@@ -626,7 +626,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 - uid: az_storage_file_url
@@ -664,7 +664,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: dev-makepatch
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/viagrif/azure-cli.git
 commands:
@@ -741,9 +741,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/viagrif/azure-cli/blob/dev-makepatch/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-original_content_git_url: https://github.com/viagrif/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/viagrif/azure-cli/blob/0155fc68a53811c8531dff3c0a2cc6e7681f821e/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-updated_at: 2/9/2018 2:40:29 AM
-ms.date: 2/9/2018
+original_content_git_url: https://github.com/viagrif/azure-cli/blob/dev-makepatch/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+gitcommit: https://github.com/viagrif/azure-cli/blob/e4bd776dd259809c71082bb6365931442d484e1f/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+updated_at: 3/1/2018 1:21:12 AM
+ms.date: 3/1/2018
